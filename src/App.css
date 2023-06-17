@@ -1,0 +1,10 @@
+@font-face {
+    font-family: firagoBold;
+    src: url(../src/FIRAGO-REGULAR.ttf)
+}
+
+.App {
+    width: 100%;
+    font-family: firagoBold;
+}
+

@@ -1,0 +1,117 @@
+@import url("//cdn.web-fonts.ge/fonts/bpg-nino-mtavruli-bold/css/bpg-nino-mtavruli-bold.min.css");
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #2a5a8d;
+    padding-bottom: 40px;
+    box-shadow: 5px 5px 100px 40px #153251 inset;
+}
+
+.container h2 {
+    font-size: 2.5vw;
+    color: white;
+    text-align: center;
+    padding: 40px 0px;
+    font-family: "BPG Nino Mtavruli Bold", sans-serif;
+}
+
+.cardContainer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: 30%;
+    height: auto;
+    padding: 10px;
+    color: white;
+}
+
+.imgCnt {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    filter: brightness(85%);
+    transition: 0.4s;
+    overflow: hidden;
+}
+
+.imgCnt img {
+    width: 100%;
+    height: auto;
+}
+
+.imgCnt:hover {
+    filter: brightness(100%);
+}
+
+.textCnt {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.textCnt > * {
+    margin: 10px 0px;
+}
+
+.textCnt h3 {
+    font-size: 22px;
+    font-family: "BPG LE Studio 02 Caps", sans-serif;
+}
+
+.textCnt h4 {
+    font-size: 18px;
+    font-family: "BPG LE Studio 02 Caps", sans-serif;
+}
+
+.textCnt p {
+    font-size: 18px;
+    height: 55px;
+}
+
+.textCnt button {
+    max-width: 150px;
+    padding: 10px 0px;
+    background-color: #f2f2f3;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+@media screen and (max-width: 1200px) {
+    .textCnt h3 {
+        font-size: 18px;
+    }
+    .textCnt button {
+        font-size: 16px;
+    }
+    .textCnt p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .container h2 {
+        font-size: 3.5vw;
+        padding: 30px 0px;
+    }
+    .card {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container h2 {
+        font-size: 5vw;
+    }
+    .card {
+        width: 100%;
+    }
+}

@@ -1,0 +1,101 @@
+@import url("//cdn.web-fonts.ge/fonts/bpg-nino-mtavruli-bold/css/bpg-nino-mtavruli-bold.min.css");
+
+.banerCnt {
+    width: 100%;
+    margin: 80px auto 0px 0px;
+}
+
+.firstBaner {
+    width: 100%;
+    height: 80vh;
+    background-color: #a2bdf8;
+    display: flex;
+    align-items: center;
+}
+
+.firstBanerCont {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.firstBanerText h1 {
+    font-size: 3vw;
+    color: white;
+    font-family: "BPG Nino Mtavruli Bold", sans-serif;
+}
+
+.firstBanerText h2 {
+    font-size: 3vw;
+    color: white;
+    font-family: "BPG Nino Mtavruli Bold", sans-serif;
+}
+
+.startBtn {
+    font-size: 25px;
+    padding: 13px 25px;
+    margin: 10px;
+    border: none;
+    border-radius: 40px;
+    background-color: #2365f6;
+    color: white;
+    cursor: pointer;
+}
+
+.baner {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.baner img {
+    width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+    .firstBaner {
+        height: 70vh;
+    }
+    .firstBanerCont {
+        width: 30%;
+    }
+    .baner {
+        width: 70%;
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    .firstBaner {
+        flex-direction: column;
+        height: auto;
+    }
+    .firstBanerText {
+        display: flex;
+        height: 100px;
+        align-items: center;
+    }
+    .firstBanerText h1, .firstBanerText h2 {
+        font-size: 4vw;
+        padding: 2px;
+    }
+    .startBtn {
+        display: none;
+    }
+    .firstBanerCont {
+        width: 100%;
+        height: 40%;
+    }
+    .baner {
+        width: 100%;
+        height: 60%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .banerCnt {
+        margin: 70px auto 0px 0px;
+    }
+}

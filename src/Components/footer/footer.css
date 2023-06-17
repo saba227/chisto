@@ -1,0 +1,169 @@
+footer {
+    width: 100%;
+    height: 40vh;
+    background-color: #92adf2;
+}
+
+.footerCnt {
+    display: flex;
+    width: 85%;
+    height: 80%;
+    align-items: center;
+    margin: 0 auto;
+    border-bottom: 1px solid white;
+}
+
+.footerLogo {
+    width: 25%;
+}
+
+.footerLogo img {
+    width: 155px;
+    height: 45px;
+}
+
+.footerLogo p {
+    font-size: 22px;
+    color: white;
+}
+
+.footerForm {
+    width: 35%;
+}
+
+.footerForm > * {
+    color: white;
+}
+
+.footerForm p {
+    width: 70%;
+}
+
+.footerForm form {
+    margin-top: 10px;
+}
+
+.footerForm form input {
+    padding: 10px;
+}
+
+.footerForm form input[type = tel] {
+    width: 250px;
+    font-size: 16px;
+    border: none;
+}
+
+.footerForm form input[type = submit] {
+    margin-left: 10px;
+    border: none;
+    padding: 9.5px;
+    font-size: 16px;
+    background-color: white;
+}
+
+.footerForm form input:invalid {
+    color: red;
+    outline-color: red;
+}
+
+.socIcons {
+    width: 20%;
+    color: white;
+}
+
+.socIcons div {
+    display: flex;
+    padding-top: 10px;
+}
+
+.socIcons a {
+    width: 35px;
+    height: 35px;
+    font-size: 22px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin: 2px;
+}
+
+.socIcons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.phoneNum {
+    width: 20%;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.phoneNum a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    font-size: 18px;
+}
+
+.phoneNum a > * {
+    padding: 5px;
+}
+
+.security {
+    margin: 0 auto;
+    width: 85%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.security a {
+    padding: 0px 3px;
+    color: white;
+}
+
+@media screen and (max-width: 1536px) {
+    .footerCnt {
+        width: 95%;
+    }
+    .security {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    footer {
+        height: auto;
+    }
+    .footerCnt > * {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .footerCnt {
+        flex-direction: column;
+    }
+    .security {
+        padding: 20px 0px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .footerLogo img {
+        width: 125px;
+        height: 35px;
+    }
+    .footerForm form input[type=tel] {
+        font-size: 14px;
+        width: 180px;
+    }
+    .footerForm form input[type = submit] {
+        font-size: 14px;
+    }
+    .security {
+        font-size: 14px;
+    }
+}

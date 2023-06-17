@@ -1,0 +1,79 @@
+.orderServicesCnt {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 2;
+}
+
+.orderServiceCard {
+    width: 400px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 10px;
+}
+
+.orderServiceCard div {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.closeBtn {
+    padding: 0px 10px;
+    font-size: 18px;
+}
+
+.orderServiceCard h3 {
+    color: black;
+    font-size: 34px;
+    font-family: "BPG LE Studio 02 Caps", sans-serif;
+    height: 10%;
+
+    width: 200px;
+    display: inline;
+}
+
+.orderServiceCard form {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: center;
+    height: 70%;
+}
+
+.orderServiceCard form > * {
+    margin: 5px;
+}
+
+.orderServiceCard form input {
+    font-size: 18px;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+input[type=number] {
+    appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input:invalid {
+    color: red;
+    border-color: red;
+    outline-color: red;
+}
+
+form button {
+    padding: 10px;
+    width: 100px;
+    font-size: 18px;
+}
